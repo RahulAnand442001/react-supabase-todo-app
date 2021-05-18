@@ -1,18 +1,14 @@
-import logo from "./assets/logo.svg";
-import supabaseLogo from "./assets/supabase.png";
 import "./App.css";
+import Header from "./components/header/header.component";
 import Todo from "./components/todo/todo.component";
 
-function App() {
+const App = () => {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} alt="logo" />
-				<img src={supabaseLogo} alt="logo" />
-				<Todo />
-			</header>
+			<Header />
+			<Todo />
 		</div>
 	);
-}
+};
 
 export default App;

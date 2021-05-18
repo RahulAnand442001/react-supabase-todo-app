@@ -1,0 +1,69 @@
+.todo-preview {
+	min-height: 100vh;
+	background-color: white;
+	padding: 3rem 9rem;
+	text-align: center;
+}
+
+.todo-preview-heading {
+	margin: 1rem;
+	font-size: 3rem;
+}
+
+.todo-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100%;
+	list-style-type: none;
+}
+
+.todo {
+	background-color: #030311;
+	color: white;
+	padding: 1rem 1.5rem;
+	width: 18%;
+	height: 15vh;
+	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.todo-task {
+	margin: 1.5rem auto;
+}
+
+.todo-options {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-top: 1px solid white;
+	width: 100%;
+}
+
+.option {
+	margin: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.option .fa-check-circle:hover {
+	color: #38f838;
+}
+
+.option .fa-trash-alt:hover {
+	color: #f02d2d;
+}
+
+@media only screen and (max-width: 600px) {
+	.todo-preview {
+		padding: 1rem;
+	}
+
+	.todo {
+		width: 100%;
+		height: auto;
+	}
+}
